@@ -2,7 +2,7 @@
 <template>
   <div class="signin">
     <h2>アプリにサインイン</h2>
-    <input type="text" placeholder="ユーザー名" v-model="username">
+    <input type="text" placeholder="メールアドレス" v-model="mail">
     <input type="password" placeholder="パスワード" v-model="password">
     <button>サインイン</button>
     <p>アカウントをお持ちでないですか?<router-link to="/signup"> ぜひ作成してください！</router-link>
@@ -15,7 +15,7 @@ export default {
   name: 'Signin',
   data () {
     return {
-      username: '',
+      mail: '',
       password: ''
     }
   },

@@ -2,7 +2,10 @@
   <div class="signup">
     <h2>新規アカウントを作成</h2>
     <input type="text" placeholder="ユーザー名" v-model="username">
+    <input type="text" placeholder="メールアドレス" v-model="mail">
     <input type="password" placeholder="パスワード" v-model="password">
+    <input type="password" placeholder="再入力パスワード" v-model="password">
+
     <button>アカウント登録</button>
     <p>アカウントをお持ちですか？<router-link to="/signin">今すぐサインイン!!</router-link>
     </p>
@@ -15,6 +18,7 @@ export default {
   data () {
     return {
       username: '',
+      mail:'',
       password: ''
     }
   },
