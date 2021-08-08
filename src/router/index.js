@@ -3,6 +3,8 @@ import Router from 'vue-router'
 import HelloWorld from '@/components/HelloWorld'
 import Signup from '@/components/Signup'
 import Signin from '@/components/Signin'
+import Home from '@/components/Home'
+
 
 Vue.use(Router)
 
@@ -22,6 +24,11 @@ export default new Router({
       path: '/signin',
       name: 'Signin',
       component: Signin
+    },
+    {
+      path: '/home',
+      name: 'Home',
+      component: Home
     }
   ]
 }

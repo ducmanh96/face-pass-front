@@ -1,20 +1,19 @@
 
 <template>
 
-  <div class="hello">
+  <div class="home">
     <h1>{{ msg }}</h1>
-      <router-link to="/signin"><button @click="Signin">Signin</button></router-link>
-      <router-link to="/signup"><button @click="Signup">Signup</button></router-link>   
+      
     
   </div>
 </template>
 
 <script>
 export default {
-  name: 'hello',
+  name: 'Home',
   data () {
     return {
-      msg: 'Wecome to we app!'
+      msg: 'Wecome to homepage!'
     }
   }
 }

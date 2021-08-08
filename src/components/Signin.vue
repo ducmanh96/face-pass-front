@@ -1,11 +1,11 @@
 
 <template>
   <div class="signin">
-    <h2>アプリにサインイン</h2>
-    <input type="text" placeholder="メールアドレス" v-model="mail">
-    <input type="password" placeholder="パスワード" v-model="password">
-    <button>サインイン</button>
-    <p>アカウントをお持ちでないですか?<router-link to="/signup"> ぜひ作成してください！</router-link>
+    <h2>Signin</h2>
+    <input type="text" placeholder="mail address" v-model="mail">
+    <input type="password" placeholder="password" v-model="password">
+    <p><router-link to="/home"><button>Signin</button></router-link>
+    <p><router-link to="/signup"> You don't have an account? </router-link>
     </p>
   </div>
 </template>

@@ -1,13 +1,13 @@
 <template>
   <div class="signup">
-    <h2>新規アカウントを作成</h2>
-    <input type="text" placeholder="ユーザー名" v-model="username">
-    <input type="text" placeholder="メールアドレス" v-model="mail">
-    <input type="password" placeholder="パスワード" v-model="password">
-    <input type="password" placeholder="再入力パスワード" v-model="password">
+    <h2>Sign up</h2>
+    <input type="text" placeholder="Users" v-model="username">
+    <input type="text" placeholder="mail address" v-model="mail">
+    <input type="password" placeholder="password" v-model="password">
+    <input type="password" placeholder="Confirm password " v-model="password1">
 
-    <button>アカウント登録</button>
-    <p>アカウントをお持ちですか？<router-link to="/signin">今すぐサインイン!!</router-link>
+    <button>Account registration</button>
+    <p>Do you have an account? <router-link to="/signin">sign in now!!!!</router-link>
     </p>
   </div>
 </template>
@@ -19,7 +19,8 @@ export default {
     return {
       username: '',
       mail:'',
-      password: ''
+      password: '',
+      password1: ''
     }
   },
   methods: {}
